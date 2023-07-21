@@ -11,6 +11,7 @@ import { AUTO_LANGUAGE, VOICE_FOR_LANGUAGE } from './Constant'
 import { useStore } from './hooks/useStore'
 import { translate } from './services/Translate'
 import { SectionType } from './types.d'
+import logo from './assets/GLR.dev.svg'
 
 function App () {
   const {
@@ -52,7 +53,12 @@ function App () {
 
   return (
     <Container fluid>
+      <div className='header'>
+      <img className='logo' src={logo} alt="personal_logo" width='70' height='70'/>
+      </div>
+      <div className='title'>
       <h2>Google Translate</h2>
+      </div>
 
       <Row>
         <Col>
